@@ -77,3 +77,50 @@ background: '/img/posts/02.jpg'
   <li>
     <h3>Persistence and Post-Exploitation:</h3>
     <p>Persistence and post-exploitation tools are crucial components of a red team hacker's toolkit. They are used after gaining initial access to a target system or network to maintain persistence, gather additional information, and further exploit the compromised environment.</p>
+    <ul>
+    <li>
+      <strong>Metasploit Framework:</strong>
+      <ul>
+        <li>Command: <code>msfconsole</code></li>
+        <li>Description: Metasploit is a widely-used framework that offers various modules for both exploitation and post-exploitation. It provides a range of capabilities such as pivoting, privilege escalation, credential theft, and lateral movement.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Empire:</strong>
+      <ul>
+        <li>Command: <code>empire</code></li>
+        <li>Description: Empire is a post-exploitation framework that emphasizes PowerShell-based attacks. It provides an extensive set of modules to perform tasks such as command execution, lateral movement, persistence, and data exfiltration.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Cobalt Strike:</strong>
+      <ul>
+        <li>Command: <code>beacon</code></li>
+        <li>Description: Cobalt Strike's beacon is a post-exploitation tool that allows red teamers to establish a persistent foothold in a compromised system, enabling command execution, lateral movement, and data exfiltration.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Credential Dumping</h2>
+  <p>Credential dumping is the process of extracting or obtaining stored credentials from a compromised system. Red teamers use credential dumping techniques to escalate privileges, gain access to other systems, or move laterally within a network. By extracting credentials, red teamers can impersonate legitimate users, bypass authentication mechanisms, and access sensitive information.</p>
+  <ul>
+    <li>
+      <strong>Mimikatz:</strong>
+      <ul>
+        <li>Command: <code>mimikatz.exe "sekurlsa::logonPasswords"</code></li>
+        <li>Description: Mimikatz is a powerful tool that can extract various types of credentials from Windows systems, including passwords, hashes, and Kerberos tickets. The provided command extracts logged-on user credentials from the system's memory.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>ProcDump:</strong>
+      <ul>
+        <li>Command: <code>procdump.exe -ma lsass.exe</code></li>
+        <li>Description: ProcDump is a command-line utility used for creating memory dumps of running processes. By creating a dump of the LSASS process (Local Security Authority Subsystem Service), red teamers can later analyze it using tools like Mimikatz to extract credentials.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Collaboration with Blue Teams</h2>
+  <p>Collaboration between red and blue teams is crucial for enhancing an organization's overall security posture. Red teams simulate attacks to identify vulnerabilities and weaknesses in an organization's security controls, while blue teams defend against these attacks. By working together, both teams can effectively detect and mitigate security threats.</p>
+  <p>Red teams use a variety of tools such as Nmap Automator, Metasploit, and Bloodhound for reconnaissance, vulnerability scanning, and lateral movement. Blue teams use tools like SIEM (Security Information and Event Management) and IDS (Intrusion Detection System) for 
+     
