@@ -27,3 +27,53 @@ background: '/img/posts/02.jpg'
   <li>Exploitation: Attempt to exploit identified vulnerabilities to gain unauthorized access to systems or sensitive data, testing the extent of potential damage.</li>
   <li>Lateral Movement: Pivot through the organization's network, moving laterally from one compromised system to another, testing network segmentation, isolation measures, and the organization's ability to detect and respond to lateral movement.</li>
 </ol>
+
+<h2>Types of Tools Used by Red Team Hackers and Their Applications</h2>
+
+<ol>
+  <li>
+    <h3>Reconnaissance:</h3>
+    <p>Reconnaissance tools used by red team hackers are designed to gather information about the target organization, its systems, and its employees. These tools help red teams assess the organization's digital footprint, identify potential attack vectors, and gather intelligence for planning and executing simulated attacks. Common reconnaissance tools used by red team hackers include:</p>
+    <ul>
+      <li>
+        <strong>Rutscan:</strong>
+        <ul>
+          <li>Command: <code>rustscan -a &lt;target_ip&gt; --ulimit 5000 -- -sV</code></li>
+          <li>Description: Rutscan is a popular reconnaissance tool used by red team hackers to perform efficient and fast port scanning and service enumeration. It is known for its simplicity, speed, and effectiveness in identifying open ports and providing detailed information about the services running on those ports. Below is an example command to use Rutscan:</li>
+          <ul>
+            <li><code>--ulimit 5000</code> sets the ulimit value to avoid potential file descriptor limitations during the scanning process. Adjust this value as needed based on your system's capabilities.</li>
+          </ul>
+        </ul>
+      </li>
+      <li>
+        <strong>Nmap Automator:</strong>
+        <ul>
+          <li>Command: <code>./nmapAutomator.sh &lt;target_ip&gt;</code></li>
+          <li>Description: Nmap Automator is a handy script designed to simplify and automate common reconnaissance and scanning tasks using the Nmap network scanning tool. It is widely used by red team hackers to streamline the scanning process and obtain comprehensive information about target networks.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h3>Privilege Escalation:</h3>
+    <p>Privilege escalation tools used by red team hackers are designed to exploit vulnerabilities and weaknesses in systems, applications, or configurations to elevate their level of access within a target environment. Common privilege escalation tools used by red team hackers include:</p>
+    <ul>
+      <li>
+        <strong>Sharpup:</strong>
+        <ul>
+          <li>Command: <code>.\SharpUp.exe</code></li>
+          <li>Description: SharpUp is a red team tool specifically designed for privilege escalation in Windows environments. It leverages various techniques to identify potential vulnerabilities and misconfigurations that can be exploited to escalate privileges.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>PEASS:</strong>
+        <ul>
+          <li>Command: <code>.\winPEAS.exe</code></li>
+          <li>Description: PEASS (Privilege Escalation Awesome Scripts Suite) is a collection of privilege escalation scripts that are commonly used by red teamers and penetration testers to identify potential privilege escalation vulnerabilities in Windows environments.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h3>Persistence and Post-Exploitation:</h3>
+    <p>Persistence and post-exploitation tools are crucial components of a red team hacker's toolkit. They are used after gaining initial access to a target system or network to maintain persistence, gather additional information, and further exploit the compromised environment.</p>
