@@ -66,7 +66,6 @@ Contributions to this project are welcome! If you'd like to contribute, please f
 
 Please ensure that your code follows the established coding style and conventions. Include a clear and concise description of your changes in the pull request, along with any relevant details or supporting documentation.
 
-## License
 
 
 Thank you for visiting the repository! If you have any questions or suggestions, please don't hesitate to reach out.
