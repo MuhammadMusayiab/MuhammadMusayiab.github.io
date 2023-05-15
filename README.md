@@ -20,13 +20,13 @@ To run this website locally on your machine, follow the steps below:
 1. Clone this repository:
 
    ```
-   git clone https://github.com/your-username/my-blog-website.git
+   git clone https://github.com/muhammadmusayiab/muhammadmusayiab.github.io
    ```
 
 2. Install the necessary dependencies:
 
    ```
-   cd my-blog-website
+   cd muhammadmusayiab
    npm install
    ```
 
